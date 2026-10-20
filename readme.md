@@ -1,6 +1,6 @@
 # SentinelC2 - Distributed Honeypot & Command & Control Platform
 
-**Versión 1.0.0**
+**Versión 2.1.0**
 
 > **AVISO IMPORTANTE DE SEGURIDAD Y ÉTICA (TRABAJO ACADÉMICO)**
 >
