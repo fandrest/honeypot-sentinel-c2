@@ -1,0 +1,70 @@
+# =============================================================================
+# SENTINEL C2 - .gitignore
+# Repositorio Público Académico - Exclusión de Secretos y Telemetría
+# =============================================================================
+
+# --- 1. Variables de Entorno y Credenciales Sensibles ---
+.env
+.env.*
+!.env.example
+config.properties
+db.properties
+
+# --- 2. Volcados de Base de Datos y Datos Reales de Telemetría ---
+*.sql
+!honeypot_schema.sql
+
+# --- 3. Informes Forenses Generados y Capturas de Red ---
+DesktopApp/SentinelC2/reportes/
+reportes/
+*.log
+*log.txt
+honeypot_log.txt
+localhost_access_log.txt
+
+# --- 4. Binarios, Herramientas Externas y Descargas Automáticas ---
+*.exe
+*.msi
+*.zip
+*.tar.gz
+*.tgz
+*.tar.xz
+ngrok
+ngrok.exe
+
+# --- 5. Artefactos de Compilación y Dependencias (Java, Node.js, Python) ---
+target/
+**/target/
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+build/
+**/build/
+__pycache__/
+**/__pycache__/
+*.class
+*.pyc
+
+# --- 6. Documentación Generada Automáticamente ---
+Documentacion/doxygen_out/
+Documentacion/_build/
+doxygen_out/
+_build/
+
+# --- 7. Informes de Pruebas y Playwright Cache ---
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
+
+# --- 8. Archivos Específicos del IDE y del Sistema Operativo ---
+.idea/
+.vscode/
+*.iml
+*.iws
+nbproject/private/
+Thumbs.db
+.DS_Store
+Desktop.ini

@@ -1,0 +1,25 @@
+# =============================================================================
+# proxies.example.txt — Plantilla de lista de proxies para Ataque_Bots
+# =============================================================================
+# Copia este fichero como 'proxies.txt' y sustitúyelo por tus proxies reales.
+# El fichero 'proxies.txt' está excluido del repositorio por .gitignore.
+#
+# Formato admitido (una entrada por línea):
+#   http://ip:puerto
+#   https://ip:puerto
+#   socks5://ip:puerto
+#
+# Fuentes gratuitas de proxies para laboratorio:
+#   - https://proxyscrape.com/free-proxy-list
+#   - https://www.proxy-list.download
+#   - https://spys.one
+#
+# AVISO: Los proxies gratuitos suelen tener alta latencia y caducan rápido.
+# Si el script de Playwright falla por timeout, comenta la línea con '#'.
+# =============================================================================
+
+# --- Ejemplos ficticios (sustituir por proxies reales) ---
+# http://1.2.3.4:8080
+# http://5.6.7.8:3128
+# socks5://9.10.11.12:1080
+# https://13.14.15.16:443

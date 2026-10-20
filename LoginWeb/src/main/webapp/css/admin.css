@@ -1,0 +1,146 @@
+/* Estilo exclusivo para admin.html */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #050a18;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serf;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.glow-blue {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 60%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(0, 86, 179, 0.4) 0%, transparent 70%);
+    filter: blur(80px);
+}
+
+.glow-green {
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 60%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(40, 167, 69, 0.3) 0%, transparent 70%);
+    filter: blur(80px);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 28px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 85%;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007aff 0%, #0056b3 100%);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 122, 255, 0.4);
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 122, 255, 0.6);
+    background: linear-gradient(135deg, #0084ff 0%, #0062cc 100%);
+}
+
+/* Secciones de insignias de seguridad */
+.security-badges {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    gap: 10px;
+}
+
+.badge-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge-item span {
+    font-size: 9px;
+    font-weight: bold;
+    color: #888;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.badge-item img {
+    height: 35px;
+    /* Reducido para mejor ajuste horizontal */
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.badge-item:hover img {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.footer-info p {
+    font-size: 11px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.session-status {
+    margin-top: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #999;
+}
+
+.status-online {
+    color: #28a745;
+}
+
+#error-container {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}

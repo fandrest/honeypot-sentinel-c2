@@ -1,0 +1,21 @@
+# =============================================================================
+# Monitor_red - .gitignore
+# =============================================================================
+
+# --- Variables de entorno y credenciales ---
+.env
+.env.*
+!.env.example
+
+# --- Dependencias Node.js ---
+node_modules/
+
+# --- Logs generados en tiempo de ejecución ---
+*.log
+*log.txt
+localhost_access_log.txt
+
+# --- Archivos de sistema operativo ---
+.DS_Store
+Thumbs.db
+Desktop.ini

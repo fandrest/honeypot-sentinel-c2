@@ -1,0 +1,15 @@
+# Playwright & Node
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Entorno y credenciales
+.env
+.env.*
+!.env.example
+
+# Listas de proxies reales (usar proxies.example.txt como plantilla)
+proxies.txt

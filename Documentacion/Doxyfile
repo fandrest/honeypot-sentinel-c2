@@ -1,0 +1,39 @@
+PROJECT_NAME           = "SentinelC2 - Threat Intelligence Platform"
+PROJECT_NUMBER         = "2.1.0"
+OUTPUT_DIRECTORY       = doxygen_out
+
+# Idioma de Salida
+OUTPUT_LANGUAGE        = Spanish
+
+# Que Doxygen busque en todo el proyecto
+INPUT                  = "../DesktopApp/SentinelC2" "../LoginWeb" "../Ataque_Bots" "../Monitor_red"
+RECURSIVE              = YES
+FILE_PATTERNS          = *.java *.py *.js
+EXCLUDE_PATTERNS       = */node_modules/* */target/* */.git/* */dist/*
+
+# Extracción de todos los componentes, incluso estáticos o sin documentar
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# Optimización para lenguajes específicos (Mejora la sintaxis UML para Java)
+OPTIMIZE_OUTPUT_JAVA   = YES
+
+# --- Configuración Gráfica (UML y Grafos) ---
+# Requiere Graphviz instalado en el PATH
+HAVE_DOT               = YES
+UML_LOOK               = YES
+UML_LIMIT_NUM_FIELDS   = 10
+TEMPLATE_RELATIONS     = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_GRAPH_MAX_NODES    = 50
+MAX_DOT_GRAPH_DEPTH    = 3
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES
+
+# --- Opciones Extras ---
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO

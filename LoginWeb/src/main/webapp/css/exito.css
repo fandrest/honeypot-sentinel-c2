@@ -1,0 +1,95 @@
+/* Estilo exclusivo para exito_hacker.html */
+.body-exito {
+    background: #f4f7f6;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.success-card {
+    background: #ffffff;
+    width: 90%;
+    max-width: 450px;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-top: 6px solid #28a745;
+    animation: slideUp 0.5s ease-out;
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background: #d4edda;
+    color: #28a745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.success-title {
+    color: #28a745;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.success-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.info-alert {
+    background: #f8f9fa;
+    border-left: 4px solid #17a2b8;
+    padding: 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.info-alert p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.btn-reset {
+    background: transparent;
+    border: 2px solid #28a745;
+    color: #28a745;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.btn-reset:hover {
+    background: #28a745;
+    color: white;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

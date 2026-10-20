@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso WiFi Gratuito - Términos</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/wifi.png">
+</head>
+
+<body>
+
+    <div class="background-container">
+        <div class="glow-blue"></div>
+        <div class="glow-green"></div>
+    </div>
+
+    <div id="modal-overlay">
+        <div class="modal-cookies" id="modal-cookies">
+            <div id="modal-cookies-content">
+                <div class="logo-header">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="#007bff">
+                        <path d="M12 21l-12-12c4.35-4.35 10.35-6 16-4.5v2.2c-4.43-1.26-9.28.13-12.65 3.5l10.65 10.8z" />
+                    </svg>
+                </div>
+                <!-- Utilizaremos una técnica de "Ofuscación por Exceso de Información"
+                    Porque poniendo un texto corto, los usuarios podrían sospechar. De modo que si se pone un texto largo y aburrido, se intentará buscar directamente el botón de "Aceptar" para llegar al objetivo (Wi-Fi)
+                    Es una "Estrategia de Consentimiento Informado Basada en Patrones de Fatiga de Decisión"
+                -->
+                <h2>Términos y Condiciones de Acceso al Servicio WiFi-Free</h2>
+                <div class="texto-legal">
+                    <p>Al acceder a esta red inalámbrica gestionada de cortesía, el usuario reconoce y acepta de forma
+                        expresa las siguientes cláusulas de servicio:</p>
+                    <p>1. Naturaleza del servicio: El presente acceso se proporciona con fines exclusivamente de
+                        investigación académica y monitorización de tráfico en redes locales bajo el protocolo IEEE
+                        802.11.</p>
+                    <p>2. Registro de metadatos: Para garantizar la estabilidad del servicio, el sistema podrá registrar
+                        descriptores técnicos de la sesión, incluyendo identificadores lógicos de red, parámetros de
+                        resolución de host (DNS), cabeceras de agentes de usuario y métricas de latencia.</p>
+                    <p>3. Uso de los datos: La información recolectada se procesará de forma agregada para el análisis
+                        de patrones de interacción en entornos controlados de ciberseguridad. No se garantiza la
+                        privacidad absoluta del tráfico cifrado.</p>
+                    <p>4. Limitación de responsabilidad: La entidad no se hace responsable de las posibles redirecciones
+                        o fallos en la resolución de dominios externos durante la sesión activa.</p>
+                </div>
+                <label class="container-check">
+                    <input type="checkbox" id="check-consent"> He leído y acepto los términos de uso y la política de
+                    tratamiento de métricas de red.
+                </label>
+                <button type="button" onclick="aceptarTerminos()" class="btn-primary">Aceptar y continuar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/consent.gate.min.js"></script>
+</body>
+
+</html>

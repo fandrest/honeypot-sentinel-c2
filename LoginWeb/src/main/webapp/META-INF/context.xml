@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ============================================================
+  Sentinel C2 - Configuración de Base de Datos (LoginWeb)
+  ============================================================
+  Este archivo es el punto central para configurar la conexión
+  a MySQL del módulo web desplegado en Apache Tomcat.
+
+  Parámetros que debes editar:
+    username  → usuario de MySQL (por defecto: root)
+    password  → contraseña del usuario (por defecto: vacía)
+    url       → cambia 'localhost:3306' si MySQL está en otra
+                máquina o puerto, y 'honeypot_db' si el nombre
+                de la base de datos es diferente
+
+  Tras modificar este archivo, haz un redeploy de la app en
+  Tomcat (o reinicia el servidor) para que los cambios surtan
+  efecto.
+  ============================================================
+-->
+<Context path="/LoginWeb">
+    <Resource name="jdbc/honeypot_db"
+              auth="Container"
+              type="javax.sql.DataSource"
+              maxTotal="100"
+              maxIdle="30"
+              maxWaitMillis="10000"
+              username="root"
+              password=""
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/honeypot_db?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;serverTimezone=UTC"/>
+</Context>

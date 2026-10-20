@@ -1,0 +1,41 @@
+# --- BLOQUE 1: ATAQUE RÁPIDO (FALLOS ESPERADOS) ---
+admin:1234
+root:1234
+user:user
+guest:guest
+admin:password
+# --- BLOQUE 2: FUERZA BRUTA COMÚN ---
+administrator:password
+operator:operator
+support:support
+itadmin:admin
+manager:manager
+# --- BLOQUE 3: PRIMER ACIERTO (INTERCALADO) ---
+admin:admin
+# --- BLOQUE 4: MÁS FALLOS (PARA SIMULAR PERSISTENCIA) ---
+sysadmin:sysadmin
+dbadmin:dbadmin
+webmaster:webmaster
+# --- BLOQUE 5: SEGUNDO ACIERTO ---
+felipe:password
+# --- BLOQUE 6: VARIACIONES DE ALTA FRECUENCIA ---
+admin:admin123
+admin:admin2024
+admin:admin2025
+admin:admin2026
+root:root
+# --- BLOQUE 7: TERCER ACIERTO ---
+analista:sentinel
+# --- BLOQUE 8: RUIDO FINAL ---
+test:test
+demo:demo
+backup:backup
+oracle:oracle
+mysql:mysql
+temp:temp
+service:service
+app:app
+dev:dev
+staging:staging
+# --- BLOQUE 9: ÚLTIMO ACIERTO ---
+root:toor
